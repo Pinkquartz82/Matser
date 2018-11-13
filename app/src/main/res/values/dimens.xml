@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="actionText">9dp</dimen>
+    <dimen name="contentText">8dp</dimen>
+    <dimen name="graphText">12dp</dimen>
+    <dimen name="lblText">15dp</dimen>
+
+</resources>

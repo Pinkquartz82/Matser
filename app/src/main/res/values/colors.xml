@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f2f2f2</color>
+    <color name="colorPrimaryDark">#18a4e0</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="textColor">#333333</color>
+    <color name="lineBlue">#009cde</color>
+    <color name="lineGray">#d0d0d0</color>
+    <color name="lineViolet">#c779a0</color>
+    <color name="lineOrange">#feaa72</color>
+    <color name="lineDay">#ffcc83</color>
+    <color name="lineNtp">#33599f</color>
+    <color name="lineYellow">#ffff00</color>
+    <color name="lineRed">#ff0000</color>
+    <color name="lineGreen">#909024</color>
+    <color name="loginText">#75787C</color>
+    <color name="topbarColor">#f1f1f1</color>
+    <color name="transparant">#80000000</color>
+    <color name="loginBg">#e9e9e8</color>
+    <color name="signin">#0f66be</color>
+    <color name="loginButtomBG">#f2f2ef</color>
+    <color name="chartlayoutBgcolor">#e6e6e6</color>
+    <color name="buttonColor">#ffffff</color>
+</resources>

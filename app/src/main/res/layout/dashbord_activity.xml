@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.8"
+            android:orientation="vertical">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:isScrollContainer="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/chartlayoutBgcolor"
+                    android:orientation="vertical">
+
+                    // Home and save button //
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/topbarColor"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            app:srcCompat="@android:drawable/btn_plus" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_weight="1"
+                            android:paddingRight="10dp"
+                            app:srcCompat="@android:drawable/btn_plus" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="256dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="0dp">
+
+
+                        <com.highsoft.highcharts.Core.HIChartView
+                            android:id="@+id/hc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_alignEnd="@+id/hc"
+                            android:gravity="right">
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/Day7"
+                                android:layout_width="26dp"
+                                android:layout_height="20dp"
+                                android:gravity="center_vertical|center"
+                                android:text="7D"
+                                android:textSize="10sp"
+                                android:layout_toLeftOf="@id/Border1"
+                                android:padding="1dp"/>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/Border1"
+                                android:layout_width="1dp"
+                                android:layout_height="20dp"
+                                android:layout_toLeftOf="@id/Day14"
+                                android:padding="1dp"
+                                android:background="@color/lineOrange"/>
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/Day14"
+                                android:layout_width="26dp"
+                                android:layout_height="20dp"
+                                android:gravity="center_vertical|center"
+                                android:text="14D"
+                                android:textSize="10sp"
+                                android:layout_toLeftOf="@id/Border2"
+                                android:padding="1dp"/>
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/Border2"
+                                android:layout_width="1dp"
+                                android:layout_height="20dp"
+                                android:layout_toLeftOf="@id/Day21"
+                                android:padding="1dp"
+                                android:background="@color/lineOrange"/>
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/Day21"
+                                android:layout_width="26dp"
+                                android:layout_height="20dp"
+                                android:gravity="center_vertical|center"
+                                android:text="21D"
+                                android:textSize="10sp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:padding="1dp"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="256dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="0dp"
+                        android:orientation="vertical">
+
+                        <com.highsoft.highcharts.Core.HIChartView
+                            android:id="@+id/hc1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v4.widget.NestedScrollView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2"
+            android:background="@color/lineGray"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical|center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/btn_plus" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical|center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/btn_plus" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical|center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/btn_plus" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical|center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/btn_plus" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
